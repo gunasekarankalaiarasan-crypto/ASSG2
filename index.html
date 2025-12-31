@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG: Health & Well-being</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery (REQUIRED because you are using slideToggle) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- External JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SDG 3</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Good Health & Well-being</h2>
+            <p>Promoting healthy lives and well-being for all, at all ages.</p>
+            <a href="#info" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="info-section">
+        <h2>Why Health Matters</h2>
+        <p>
+            Good health is essential for a happy and productive life. SDG 3 focuses
+            on improving physical and mental well-being through awareness,
+            prevention, and access to healthcare.
+        </p>
+    </section>
+
+    <!-- jQuery Effect Section -->
+    <section class="tips-section">
+        <h2>Healthy Living Tips</h2>
+        <button id="toggleTips" class="btn">Show / Hide Tips</button>
+
+        <div class="tips">
+            <ul>
+                <li>Eat a balanced and nutritious diet</li>
+                <li>Exercise regularly</li>
+                <li>Get enough sleep</li>
+                <li>Take care of mental health</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery of Healthy Activities</h2>
+        <div class="carousel">
+            <button class="prev">&lt;</button>
+            <div class="carousel-images">
+                <img src="images/health1.jpg" alt="Daily activity keeps you energized.">
+                <img src="images/health2.jpg" alt="Good food fuels a strong body.">
+                <img src="images/health3.jpg" alt="Check-ups keep you safe and well.">
+                <img src="images/health4.jpg" alt="Support your mental well-being.">
+                <img src="images/health5.jpg" alt="Healthy communities, happy lives.">
+            </div>
+            <button class="next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- About / Contact Section -->
+    <section id="about" class="about-section">
+        <h2>About / Contact</h2>
+        <p>
+            This website is created to raise awareness about SDG 3: Good Health & Well-being.
+            For more information or to get involved, reach out to us:
+        </p>
+        <ul>
+            <li>Email: info@sdg3health.org</li>
+            <li>Phone: +123 456 7890</li>
+            <li>Address: 123 Wellness Ave, Healthy City</li>
+        </ul>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SDG 3 Website | Web Development Assignment</p>
+    </footer>
+
+    <!-- jQuery Script -->
+    <script>
+        $(document).ready(function () {
+            $("#toggleTips").click(function () {
+                $(".tips").slideToggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
